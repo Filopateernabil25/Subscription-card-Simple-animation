@@ -1,0 +1,95 @@
+body{
+    background-color: black;
+}
+/* Start Container */
+.container{
+    width: 50%;
+    margin: auto;
+}
+/* End container */
+/* Start Parent */
+.parent{
+    display: grid;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* End parent */
+/* Start Card */
+.card{
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    background-color: #1F262C;
+    padding: 20px;
+}
+.card1{
+    animation: card 1s linear infinite;
+    animation-delay: 1s;
+}
+.card2{
+    animation: card 1s linear infinite;
+    animation-delay: 2s;
+}
+.card3{
+    animation: card 1s linear infinite;
+    animation-delay:3s;
+}
+.card:hover{
+    animation: none;
+}
+@keyframes card {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+span{
+    font-size:40px ;
+}
+ul{
+    font-size: 20px;
+    color: #929495;
+}
+li::marker{
+    color: #EC2B46;
+}
+hr{
+    border: solid 1px #FF2B4A;
+}
+button{
+    border: solid 1px #E42A45;
+    background-color: #E42A45;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#929495;
+    border: solid 1px #929495;
+}
+/* End Card */
